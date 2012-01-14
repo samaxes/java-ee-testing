@@ -28,8 +28,6 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import com.samaxes.javax.test.HelloWorld;
-
 public class HelloWorldTest {
     private static EJBContainer ejbContainer;
 
@@ -55,8 +53,7 @@ public class HelloWorldTest {
     public void hello() throws NamingException {
         // Retrieve a reference to the session bean using a portable
         // global JNDI name
-        HelloWorld helloWorld = (HelloWorld)
-                ctx.lookup("java:global/classes/HelloWorld");
+        HelloWorld helloWorld = (HelloWorld) ctx.lookup("java:global/classes/HelloWorld");
 
         // Do your tests
         assertNotNull(helloWorld);
