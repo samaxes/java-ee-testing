@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.samaxes.javax.test</groupId>
+    <artifactId>ejb31-embeddable</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>EJB 3.1 Embeddable test</name>
+    <url>https://github.com/samaxes/java-ee-testing</url>
+    <inceptionYear>2011</inceptionYear>
+    <organization>
+        <name>samaxes</name>
+        <url>http://www.samaxes.com/</url>
+    </organization>
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>samaxes</id>
+            <name>Samuel Santos</name>
+            <url>http://www.samaxes.com/</url>
+            <roles>
+                <role>project owner</role>
+                <role>developer</role>
+            </roles>
+            <timezone>0</timezone>
+        </developer>
+    </developers>
+
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/samaxes/java-ee-testing/issues</url>
+    </issueManagement>
+    <scm>
+        <connection>scm:git:git://github.com/samaxes/java-ee-testing.git</connection>
+        <developerConnection>scm:git:git@github.com:samaxes/java-ee-testing.git</developerConnection>
+        <url>https://github.com/samaxes/java-ee-testing</url>
+    </scm>
+
+    <prerequisites>
+        <maven>3.0</maven>
+    </prerequisites>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.glassfish.extras</groupId>
+            <artifactId>glassfish-embedded-all</artifactId>
+            <version>3.1.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.3.1</version>
+            <scope>test</scope>
+        </dependency>
+        <!--
+            The javaee-api is stripped of any code and is just used to
+            compile your application. The scope provided in Maven means
+            that it is used for compiling, but is also available when
+            testing. For this reason, the javaee-api needs to be below
+            the embedded Glassfish dependency. The javaee-api can actually
+            be omitted when the embedded Glassfish dependency is included,
+            but to keep your project Java-EE 6 rather than GlassFish,
+            specification is important.
+        -->
+        <dependency>
+            <groupId>javax</groupId>
+            <artifactId>javaee-api</artifactId>
+            <version>6.0</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</project>
