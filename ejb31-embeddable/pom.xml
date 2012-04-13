@@ -8,7 +8,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>EJB 3.1 Embeddable test</name>
+    <name>EJB 3.1 Embeddable testing demo</name>
     <url>https://github.com/samaxes/java-ee-testing</url>
     <inceptionYear>2011</inceptionYear>
     <organization>
