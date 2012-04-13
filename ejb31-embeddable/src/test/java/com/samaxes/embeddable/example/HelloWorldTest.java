@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.samaxes.javax.test;
+package com.samaxes.embeddable.example;
 
 import static org.testng.AssertJUnit.assertNotNull;
 import static org.testng.AssertJUnit.assertTrue;
@@ -27,6 +27,8 @@ import javax.naming.NamingException;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import com.samaxes.embeddable.example.HelloWorld;
 
 public class HelloWorldTest {
     private static EJBContainer ejbContainer;
