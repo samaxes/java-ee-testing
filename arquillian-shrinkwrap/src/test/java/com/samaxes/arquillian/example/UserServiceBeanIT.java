@@ -37,7 +37,7 @@ public class UserServiceBeanIT extends Arquillian {
 
     @Test
     public void callServiceToAddNewUserToDB() {
-        final User user = new User("First Ike");
+        final User user = new User("Ike");
         service.addUser(user);
         assertNotNull(user.getId(), "User id should not be null!");
     }

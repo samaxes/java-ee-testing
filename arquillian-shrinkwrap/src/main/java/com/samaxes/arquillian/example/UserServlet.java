@@ -23,7 +23,7 @@ public class UserServlet extends HttpServlet {
         response.setContentType("text/plain");
 
         PrintWriter out = response.getWriter();
-        out.println(service.addUser(new User("Second Ike")).toString());
+        out.println(service.addUser(new User("Ike")).toString());
         out.close();
     }
 

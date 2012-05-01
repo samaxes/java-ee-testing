@@ -10,7 +10,7 @@
 
     <name>Arquillian and Shrinkwrap example</name>
     <url>https://github.com/samaxes/java-ee-testing</url>
-    <inceptionYear>2011</inceptionYear>
+    <inceptionYear>2012</inceptionYear>
     <organization>
         <name>samaxes</name>
         <url>http://www.samaxes.com/</url>
@@ -122,19 +122,18 @@
         <dependency>
             <groupId>org.jboss.arquillian.testng</groupId>
             <artifactId>arquillian-testng-container</artifactId>
-            <!--version>${arquillian.version}</version-->
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.3.1</version>
+            <version>6.4</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.jboss.spec</groupId>
             <artifactId>jboss-javaee-6.0</artifactId>
-            <version>1.0.0.Final</version>
+            <version>3.0.1.Final</version>
             <type>pom</type>
             <scope>provided</scope>
         </dependency>
@@ -158,7 +157,7 @@
     </profiles>
 
     <properties>
-        <arquillian.version>1.0.0.Final</arquillian.version>
+        <arquillian.version>1.0.0.CR8</arquillian.version>
         <jboss.version>7.1.1.Final</jboss.version>
     </properties>
 </project>

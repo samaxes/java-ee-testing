@@ -42,7 +42,7 @@ public class UserServletIT extends Arquillian {
     public void callServletToAddNewUserToDB(@ArquillianResource URL baseURL) throws IOException {
         // Servlet is listening at <context_path>/User
         final URL url = new URL(baseURL, "User");
-        final User user = new User(1L, "Second Ike");
+        final User user = new User(1L, "Ike");
 
         StringBuilder builder = new StringBuilder();
         BufferedReader reader = new BufferedReader(new InputStreamReader(url.openStream()));
