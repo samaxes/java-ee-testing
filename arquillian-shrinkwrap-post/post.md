@@ -119,7 +119,7 @@ Configure your Maven project descriptor to use Arquillian by appending the follo
         <dependency>
             <groupId>org.jboss.arquillian</groupId>
             <artifactId>arquillian-bom</artifactId>
-            <version>1.0.0.CR8</version>
+            <version>1.0.1.Final</version>
             <scope>import</scope>
             <type>pom</type>
         </dependency>
@@ -142,8 +142,8 @@ Configure your Maven project descriptor to use Arquillian by appending the follo
         <groupId>org.jboss.spec</groupId>
         <artifactId>jboss-javaee-6.0</artifactId>
         <version>3.0.1.Final</version>
-        <type>pom</type>
         <scope>provided</scope>
+        <type>pom</type>
     </dependency>
 </dependencies>
 
